@@ -141,4 +141,10 @@ I would like to thank Microverse community.
 
 This project is [MIT](LICENSE.md) licensed.
 
+Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
+
+The original design is under [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/).
+
+Multimedia and content changes were made in this project.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
