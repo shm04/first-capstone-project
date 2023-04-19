@@ -22,7 +22,7 @@
 # 📖 HTML/CSS & JavaScript capstone project - Conference page <a name="about-project"></a>
 
 **First capstone project** is a web page where you can find information about Rollind Loud Festival.<br>
-In [this video](https://www.loom.com/share/7a0d49f520594517a0023d5b2aeeb5c9) you can find more information about this project.
+In [this video](https://www.loom.com/share/f3c0f70af313427ea90338dca039b987) you can find more information about this project.
 
 ## 🛠 Built With <a name="built-with"></a>
 
