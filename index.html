@@ -10,66 +10,68 @@
     <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="upper-bar">
-            <a href=""><img class="facebook-icon" src="./imgs-capstone/facebook-icon.png"></a>
-            <a href=""><img class="twitter-icon" src="./imgs-capstone/twitter-icon.png"></a>
-            <a href="" class="upper-section">English</a>
-            <a href="" class="upper-section">My Page</a>
-            <a href="" class="upper-section logout">Logout</a>
-        </div>
-        <nav class="nav-bar">
-            <img class="logo-navbar" src="./imgs-capstone/logo.png">
-            <div class="sections-navbar">
-                <div class="links">
-                    <button class="close-btn" type="button">
-                        <img src="./imgs-capstone/close-btn.png">
-                    </button>
-                    <a href="about.html" class="sec-navbar display-nav-secs">About</a>
-                    <a href="" class="sec-navbar display-nav-secs">Program</a>
-                    <a href="" class="sec-navbar display-nav-secs">Join</a>
-                    <a href="" class="sec-navbar display-nav-secs">Sponsor</a>
-                    <a href="" class="sec-navbar display-nav-secs">News</a>
-                    <a href="" class="campaign-navbar display-nav-secs">CC Campaign</a>
-                </div>
+    <div class="background-div">
+        <header>
+            <div class="upper-bar">
+                <a href=""><img class="socialmedia-icon" src="./imgs-capstone/facebook-icon.png"></a>
+                <a href=""><img class="socialmedia-icon" src="./imgs-capstone/twitter-icon.png"></a>
+                <a href="" class="upper-section">English</a>
+                <a href="" class="upper-section">My Page</a>
+                <a href="" class="upper-section">Logout</a>
             </div>
-            <button class="menu-btn" type="button">
-                <img class="ham-btn" src="./imgs-capstone/menu-btn.png">
-            </button>
-        </nav>
-    </header>
-    <section class="home-page">
-        <h2 class="home-subtitle">"Hello! Rolling Loud community"</h2>
-        <h1 class="home-title">Rolling Loud Festival California 2023</h1>
-        <p class="home-text">The biggest hip-hop festival in the world, with rapers and DJ´s for all around the world is taking place in March, in California, USA.</p>
-        <p class="home-date">03.03.2023(FRI) ~ 5(SUN)</p>
-        <p class="home-ubi">@ Hollywood Park Grounds Adjacent To SoFi Stadium</p>
-    </section>
+            <nav class="nav-bar">
+                <a href="index.html"><img class="logo-navbar" src="./imgs-capstone/logo.png"></a>
+                <div class="sections-navbar">
+                    <div class="links">
+                        <button class="close-btn" type="button">
+                            <img src="./imgs-capstone/close-btn.png">
+                        </button>
+                        <a href="about.html" class="sec-navbar">About</a>
+                        <a href="" class="sec-navbar">Program</a>
+                        <a href="" class="sec-navbar">Join</a>
+                        <a href="" class="sec-navbar">Sponsor</a>
+                        <a href="" class="sec-navbar">News</a>
+                        <a href="" class="sec-navbar campaign-navbar">CC Campaign</a>
+                    </div>
+                </div>
+                <button class="menu-btn" type="button">
+                    <img class="ham-btn" src="./imgs-capstone/menu-btn.png">
+                </button>
+            </nav>
+        </header>
+        <section class="home-page">
+                <p class="home-subtitle">"Hello! Rolling Loud community"</p>
+                <h1 class="home-title">Rolling Loud Festival California 2023</h1>
+                <p class="home-text">The biggest hip-hop festival in the world, with rapers and DJ's for all around the world is taking place in March, in California, USA.</p>
+                <p class="home-date">03.03.2023(FRI) ~ 5(SUN)</p>
+                <p class="home-ubi">@ Hollywood Park Grounds Adjacent To SoFi Stadium</p>
+        </section>
+    </div>
     <section class="main-program">
-        <h1 class="program-title">Main Program</h1>
+        <h2 class="program-title">Main Program</h2>
         <span class="span-red"></span>
-        <div class="days">
-            <div class="day-previous">
+        <div class="program-main">
+            <div class="program-day">
                 <img class="cal-img" src="./imgs-capstone/march-2.png" alt="march-second">
                 <h2 class="program-subtitle">Pre-festival day</h2>
                 <p class="program-text">Pre-festival party with some artists </p>
             </div>
-            <div class="day-one">
+            <div class="program-day">
                 <img class="cal-img" src="./imgs-capstone/march-3.png" alt="march-third">
                 <h2 class="program-subtitle">Opening day</h2>
                 <p class="program-text">Opening day with main artist PLAYBOI CARTI</p>
             </div>
-            <div class="day-two">
+            <div class="program-day">
                 <img class="cal-img" src="./imgs-capstone/march-4.png" alt="march-fourth">
                 <h2 class="program-subtitle" >Mid-way day</h2>
                 <p class="program-text">Mid-way festival day with main artist TRAVIS SCOTT</p>
             </div>
-            <div class="day-three">
+            <div class="program-day">
                 <img class="cal-img" src="./imgs-capstone/march-5.png" alt="march-fifth">
                 <h2 class="program-subtitle">Closing day</h2>
                 <p class="program-text">Closing day with main artist FUTURE</p>
             </div>
-            <div class="day-after">
+            <div class="program-day">
                 <img class="cal-img" src="./imgs-capstone/march-6.png" alt="march-sixth">
                 <h2 class="program-subtitle">After festival</h2>
                 <p class="program-text">Meet and greet day with main artists</p>
@@ -79,16 +81,17 @@
             <a class="see-whole-program" href="">SEE THE WHOLE PROGRAM</a>
     </section>
     <section class="featured-artists">
+        <!-- Displayed dynamically on script.js -->
     </section>
-    <section class="partner" id="sponsors">
-        <h1 class="partner-title">Sponsors</h1>
+    <section class="sponsors-main">
+        <h2 class="sponsors-title">Sponsors</h2>
         <span class="span-red"></span>
         <div class="sponsors">
-        <img class="sponsors-img" src="./imgs-capstone/levis-gray.png" alt="Levi's logo">
-        <img class="sponsors-img" src="./imgs-capstone/pixel-gray.png" alt="Google Pixel logo">
-        <img class="sponsors-img" src="./imgs-capstone/modelo-sponsor.png" alt="Modelo logo">
-        <img class="sponsors-img" src="./imgs-capstone/monster-gray.png" alt="Monster logo">
-        <img class="sponsors-img" src="./imgs-capstone/sprite-gray.png" alt="Sprite logo">
+            <img class="sponsors-img" src="./imgs-capstone/levis-gray.png" alt="Levi's logo">
+            <img class="sponsors-img" src="./imgs-capstone/pixel-gray.png" alt="Google Pixel logo">
+            <img class="sponsors-img" src="./imgs-capstone/modelo-sponsor.png" alt="Modelo logo">
+            <img class="sponsors-img" src="./imgs-capstone/monster-gray.png" alt="Monster logo">
+            <img class="sponsors-img" src="./imgs-capstone/sprite-gray.png" alt="Sprite logo">
         </div>
     </section>
     <section class="footer">

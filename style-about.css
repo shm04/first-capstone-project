@@ -3,11 +3,53 @@
   padding: 0;
 }
 
-body {
+.upper-bar,
+.logo-navbar {
+  display: none;
+}
+
+.sections-navbar {
+  display: none;
+  background-color: rgba(110, 110, 110, 85%);
+  height: 74%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
   background-image: url(./imgs-capstone/background-two.jpg);
-  background-repeat: no-repeat;
-  background-size: auto 587px;
-  background-position-x: -546px;
+  background-size: cover;
+  background-position: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255 252 252 / 65%);
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  height: 40px;
+  margin: 20px 0 50px 30px;
+  align-self: flex-start;
+}
+
+.sec-navbar {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-family: "Lato", 'Courier New', Courier, monospace;
+  color: #ff4f38;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.background-div {
+  background-image: url(./imgs-capstone/background-two.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .nav-bar {
@@ -15,56 +57,45 @@ body {
 }
 
 .menu-btn {
-  border: none;
-  background: none;
-  padding: 15px 0 0 20px;
-}
-
-.close-btn {
   background: none;
   border: none;
-  align-self: flex-start;
-  margin: 15px 0 40px 20px;
-}
-
-.ham-btn {
-  width: 40px;
   height: 40px;
+  margin: 20px 0 0 30px;
 }
 
 .home-page {
-  padding: 0 20px 0 20px;
-  background-color: rgb(255 252 252 / 65%);
+  position: relative;
   display: flex;
   flex-direction: column;
+  background-color: rgb(255 252 252 / 65%);
+  padding: 0 0 0 15px;
 }
 
 .home-subtitle {
   font-size: 22px;
   margin-bottom: 10px;
   padding-top: 35px;
-  font-family: 'Lato', 'Courier New', Courier, monospace;
+  font-family: "Lato", 'Courier New', Courier, monospace;
   font-weight: 500;
-  color: #ff4f38;
+  color: #ec5242;
 }
 
 .home-title {
   font-size: 33px;
   margin-bottom: 20px;
-  font-family: "COCOGOOSE", 'Courier New', Courier, monospace;
-  color: #ff4f38;
+  font-family: "COCOGOOSE", sans-serif;
+  color: #ec5242;
   font-weight: 500;
 }
 
 .home-text {
   font-size: 17px;
-  margin: 0 0 20px 0;
+  margin: 0 15px 20px 0;
   background-color: #f7f7f7;
   padding: 8px;
   border: solid 2px #fff;
   font-family: "Lato", 'Courier New', Courier, monospace;
-  color: #4d4d4d;
-  text-align: center;
+  color: #272a31;
 }
 
 .home-contact-us {
@@ -106,6 +137,15 @@ body {
   font-size: 24px;
 }
 
+.span-red {
+  height: 2px;
+  width: 45px;
+  background-color: #ff4f38;
+  display: block;
+  margin: 15px 0;
+  align-self: center;
+}
+
 .creative-past-text {
   margin: 0 30px 8px 30px;
   font-family: 'Lato', 'Courier New', Courier, monospace;
@@ -114,71 +154,59 @@ body {
   color: #4d4d4d;
 }
 
+.logo {
+  background-color: black;
+  border: solid 0.5px #c9c9c9;
+  border-radius: 100px;
+  margin: 40px 20px;
+  width: 200px;
+  max-width: 40%;
+  align-self: center;
+}
+
 .past-festivals {
   display: flex;
   flex-direction: column;
 }
 
-.span-red {
-  height: 2px;
-  width: 45px;
-  background-color: #ff4f38;
-  display: block;
-  margin: 15px 0 25px 0;
-  align-self: center;
+.editions {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  position: relative;
+  height: 25vh;
 }
 
-.logo {
-  width: 325px;
-  background-color: black;
-  margin: 30px 25px 30px 25px;
-  border: solid 0.5px #c9c9c9;
-  border-radius: 100px;
-}
-
-.miami-edition {
-  margin: 40px 40px 13px 40px;
-  height: 200px;
-  background-image: url(./imgs-capstone/miami.webp);
-  background-repeat: no-repeat;
-  background-size: auto 200px;
-}
-
-.toronto-edition {
-  margin: 0 40px 40px 40px;
-  height: 200px;
-  background-image: url(./imgs-capstone/toronto.jpg);
-  background-repeat: no-repeat;
-  background-size: 295px auto;
-  background-position-y: -56px;
+.edition-image {
+  height: 100%;
 }
 
 .edition-box {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255 0 0 / 35%);
+  background-color: rgba(255, 81, 0, 0.35);
+  gap: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
-.edition-year {
-  color: #fff;
-  font-family: 'Lato', 'Courier New', Courier, monospace;
-}
-
+.edition-year,
 .edition-text {
   color: #fff;
   font-family: 'Lato', 'Courier New', Courier, monospace;
+  text-align: center;
 }
 
-.partner {
-  background-color: #272a31;
+.sponsors-main {
   display: flex;
   flex-direction: column;
+  background-color: #272a31;
 }
 
-.partner-title {
+.sponsor-title {
   color: #fff;
   font-family: 'Lato', 'Courier New', Courier, monospace;
   font-weight: 500;
@@ -189,114 +217,52 @@ body {
 
 .sponsors {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 35px;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 20px 0 40px 0;
 }
 
 .sponsors-img {
-  width: 120px;
-  margin: 15px 2px 0 2px;
+  width: 100px;
 }
 
 .footer {
   display: flex;
-}
-
-.footer-img-box {
-  width: 50%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.footer-text-box {
-  width: 50%;
-  height: 100px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  color: #4d4d4d;
-  font-family: 'Lato', 'Courier New', Courier, monospace;
-  font-size: 12px;
+  justify-content: space-around;
 }
 
 .logo-footer {
-  width: 100px;
-  background: black;
+  background-color: black;
+  border: solid 0.5px #c9c9c9;
   border-radius: 100px;
+  margin: 20px;
+  height: 60px;
 }
 
-.upper-bar {
-  display: none;
-}
-
-.logo-navbar {
-  display: none;
-}
-
-.sections-navbar {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  background-image: url(./imgs-capstone/background-two.jpg);
-  background-repeat: no-repeat;
-  background-size: auto 587px;
-  background-position-x: -546px;
-}
-
-.links {
-  width: 100%;
-  height: 570px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(255 252 252 / 65%);
-}
-
-.display-nav-secs {
-  font-size: 30px;
-  margin-bottom: 30px;
-  font-family: "Lato", 'Courier New', Courier, monospace;
-  color: #ff4f38;
-  font-weight: 600;
-  text-decoration: none;
+.footer-text-box {
+  color: #4d4d4d;
+  font-family: 'Lato', 'Courier New', Courier, monospace;
+  font-size: 14px;
 }
 
 @media only screen and (min-width: 768px) {
-  body {
-    background-size: 2013px auto;
-    background-position: -177px -82px;
-  }
-
   .menu-btn {
-    display: none;
-  }
-
-  .more-btn {
     display: none;
   }
 
   .upper-bar {
     display: flex;
-    height: 21px;
     justify-content: flex-end;
     align-items: center;
+    padding: 8px 100px 8px 0;
     background-color: #272a31;
+    gap: 15px;
   }
 
-  .facebook-icon {
+  .socialmedia-icon {
     height: 15px;
-    margin-left: 12px;
-  }
-
-  .twitter-icon {
-    height: 15px;
-    margin: 0 15px 0 12px;
   }
 
   .upper-section {
@@ -305,38 +271,39 @@ body {
     font-family: 'Lato', 'Courier New', Courier, monospace;
     text-align: center;
     font-size: 13px;
-  }
-
-  .logout {
-    margin-right: 130px;
+    text-decoration: none;
   }
 
   .nav-bar {
     display: flex;
     align-items: center;
     background-color: #fff;
-    height: 50px;
   }
 
   .logo-navbar {
     display: flex;
+    justify-self: flex-start;
     height: 46px;
     background-color: black;
-    margin: 0 130px 0 150px;
     border-radius: 100px;
+    margin-left: 50px;
   }
 
   .sections-navbar {
     display: flex;
     background: none;
+    z-index: 0;
     position: inherit;
+    justify-content: flex-end;
   }
 
   .links {
     flex-direction: row;
-    justify-content: flex-end;
+    width: max-content;
+    gap: 40px;
+    padding: 20px;
     background: none;
-    height: 100%;
+    padding-right: 100px;
   }
 
   .close-btn {
@@ -344,7 +311,6 @@ body {
   }
 
   .sec-navbar {
-    margin-right: 40px;
     text-decoration: none;
     color: #4d4d4d;
     font-family: 'Lato', 'Courier New', Courier, monospace;
@@ -354,10 +320,10 @@ body {
 
   .sec-navbar:hover {
     color: #ec5242;
+    text-decoration: underline;
   }
 
   .campaign-navbar {
-    margin: 0 124px 0 10px;
     text-decoration: none;
     color: #ff4f38;
     font-family: 'Lato', 'Courier New', Courier, monospace;
@@ -367,107 +333,52 @@ body {
   }
 
   .home-page {
-    padding: 0 130px 20px 130px;
+    text-align: center;
+    padding-bottom: 50px;
   }
 
   .home-subtitle {
-    display: none;
+    font-size: 25px;
+    padding-top: 80px;
+    margin-bottom: 30px;
   }
 
   .home-title {
     font-size: 40px;
-    margin: 65px 0 42px 0;
-    text-align: center;
-    width: 650px;
-    align-self: center;
+    margin-bottom: 40px;
   }
 
   .home-text {
+    align-self: center;
     margin-bottom: 40px;
-    width: 700px;
-    align-self: center;
+    text-align: center;
+    width: 55%;
   }
 
-  .home-date {
-    margin-bottom: 20px;
-  }
-
-  .home-ubi {
-    padding-bottom: 100px;
-  }
-
-  .span-red {
-    margin: 15px 0 25px 0;
-  }
-
-  .creative-commons {
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .logo {
-    border: solid 2px #c9c9c9;
-    align-self: center;
-  }
-
-  .past-festivals {
-    display: flex;
-    flex-direction: column;
+  .creative-past-title {
+    padding-top: 50px;
   }
 
   .editions-box {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 73px;
+    padding: 30px 0 50px 0;
   }
 
-  .toronto-edition {
-    margin: 0 0 0 7px;
-    background-size: 365px auto;
-    background-position-y: -82px;
+  .editions {
+    width: 25%;
   }
 
-  .miami-edition {
-    margin: 0 7px 0 0;
-  }
-
-  .edition-box {
-    width: 356px;
-  }
-
-  .partner {
+  .sponsors-main {
     display: none;
   }
 
   .footer {
     background-color: #272a31;
-    justify-content: space-around;
-    align-items: center;
-    height: 140px;
+    padding: 30px 0;
   }
 
   .footer-text {
     color: #fff;
-    margin-left: 25px;
-  }
-
-  .footer-img-box,
-  .footer-text-box {
-    width: fit-content;
-  }
-
-  .creative-past-title {
-    font-size: 26px;
-  }
-
-  .creative-past-text {
-    font-size: 16px;
-    margin-bottom: 50px;
-  }
-
-  .showMenu {
-    display: none;
   }
 }
