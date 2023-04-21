@@ -18,10 +18,10 @@
   display: none;
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 1;
-  background-color: rgb(255, 111, 142);
+  background-color: rgb(255, 111, 142, 0.95);
   background-size: cover;
   background-position: center;
 }

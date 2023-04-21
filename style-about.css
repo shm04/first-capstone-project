@@ -9,12 +9,12 @@
 }
 
 .sections-navbar {
-  display: flex;
+  display: none;
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 1;
-  background-color: rgb(250, 167, 131);
+  background-color: rgb(250, 167, 131, 0.95);
   background-size: cover;
   background-position: center;
 }
